@@ -1,3 +1,4 @@
+package br.edu.up.modelos;
 public class CotacaoDolar {
     private double cotacao;
     private double quantdolar;
