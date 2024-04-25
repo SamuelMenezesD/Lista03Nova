@@ -2,20 +2,44 @@ package br.edu.up.modelos;
 
 public class Peso23 {
     private String nome;
-    private char sexo;
+    private String sexo;
     private double altura;
     private int idade;
 
-    public Peso23(String nome, char sexo, double altura, int idade){
+    public Peso23(String nome, String sexo, double altura, int idade){
         this.nome = nome;
         this.sexo = sexo;
         this.altura = altura;
         this.idade = idade;
     }
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getSexo() {
+        return sexo;
+    }
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+    public double getAltura() {
+        return altura;
+    }
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+    public int getIdade() {
+        return idade;
+    }
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
     public double contaPeso(){
         double pesoIdeal = 0;
 
-        if (sexo == 'M') {
+        if (sexo == "M") {
             if (altura > 1.70 && idade <= 20) {
                 return pesoIdeal = (72.7 * altura) - 58;
             } else if (altura > 1.70 && idade >= 21 && idade <= 39) {
@@ -31,7 +55,7 @@ public class Peso23 {
                 return pesoIdeal;
             }
         } 
-        else if (sexo == 'F') {
+        else if (sexo == "F") {
             if (altura > 1.50 && idade >= 35) {
                 return pesoIdeal = (62.1 * altura) - 45;
             } else if (altura > 1.50 && idade < 35) {
